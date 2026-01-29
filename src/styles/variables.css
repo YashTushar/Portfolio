@@ -1,0 +1,65 @@
+:root {
+  --bg-primary: #050510;
+  --bg-secondary: #0a0a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0cc;
+
+  /* Neon Accents */
+  --neon-cyan: #00f3ff;
+  --neon-magenta: #ff00ff;
+  --neon-purple: #bd00ff;
+  --neon-yellow: #faff00;
+  --neon-green: #00ff9f;
+
+  /* Gradients */
+  --gradient-main: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-cyan) 100%);
+  --gradient-text: linear-gradient(90deg, var(--neon-cyan), var(--neon-magenta));
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+
+  --card-bg: rgba(20, 20, 40, 0.6);
+  --nav-height: 80px;
+  --transition-fast: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(189, 0, 255, 0.08) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 243, 255, 0.08) 0%, transparent 25%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-cyan);
+}
